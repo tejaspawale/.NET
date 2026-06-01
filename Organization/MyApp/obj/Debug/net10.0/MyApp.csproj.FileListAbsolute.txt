@@ -1,0 +1,14 @@
+C:\TAP\Practice\Organization\MyApp\bin\Debug\net10.0\MyApp.exe
+C:\TAP\Practice\Organization\MyApp\bin\Debug\net10.0\MyApp.deps.json
+C:\TAP\Practice\Organization\MyApp\bin\Debug\net10.0\MyApp.runtimeconfig.json
+C:\TAP\Practice\Organization\MyApp\bin\Debug\net10.0\MyApp.dll
+C:\TAP\Practice\Organization\MyApp\bin\Debug\net10.0\MyApp.pdb
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.AssemblyInfoInputs.cache
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.AssemblyInfo.cs
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.csproj.CoreCompileInputs.cache
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.dll
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\refint\MyApp.dll
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.pdb
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\MyApp.genruntimeconfig.cache
+C:\TAP\Practice\Organization\MyApp\obj\Debug\net10.0\ref\MyApp.dll

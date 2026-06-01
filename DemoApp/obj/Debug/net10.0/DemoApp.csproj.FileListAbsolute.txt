@@ -1,0 +1,14 @@
+C:\TAP\Practice\DemoApp\bin\Debug\net10.0\DemoApp.exe
+C:\TAP\Practice\DemoApp\bin\Debug\net10.0\DemoApp.deps.json
+C:\TAP\Practice\DemoApp\bin\Debug\net10.0\DemoApp.runtimeconfig.json
+C:\TAP\Practice\DemoApp\bin\Debug\net10.0\DemoApp.dll
+C:\TAP\Practice\DemoApp\bin\Debug\net10.0\DemoApp.pdb
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.AssemblyInfoInputs.cache
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.AssemblyInfo.cs
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.csproj.CoreCompileInputs.cache
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.dll
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\refint\DemoApp.dll
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.pdb
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\DemoApp.genruntimeconfig.cache
+C:\TAP\Practice\DemoApp\obj\Debug\net10.0\ref\DemoApp.dll
