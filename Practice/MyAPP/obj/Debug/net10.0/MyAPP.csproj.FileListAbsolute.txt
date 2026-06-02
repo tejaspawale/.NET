@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\bin\Debug\net10.0\MyAPP.exe
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\bin\Debug\net10.0\MyAPP.deps.json
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\bin\Debug\net10.0\MyAPP.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\bin\Debug\net10.0\MyAPP.dll
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\bin\Debug\net10.0\MyAPP.pdb
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.sourcelink.json
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.dll
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\refint\MyAPP.dll
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.pdb
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\MyAPP.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Practice\MyAPP\obj\Debug\net10.0\ref\MyAPP.dll

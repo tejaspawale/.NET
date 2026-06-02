@@ -1,0 +1,12 @@
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\bin\Debug\net10.0\Bank.Business.deps.json
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\bin\Debug\net10.0\Bank.Business.dll
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\bin\Debug\net10.0\Bank.Business.pdb
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.sourcelink.json
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.dll
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\refint\Bank.Business.dll
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\Bank.Business.pdb
+C:\TAP\MygitRepo\.NET\MySolutions\Bank.Business\obj\Debug\net10.0\ref\Bank.Business.dll

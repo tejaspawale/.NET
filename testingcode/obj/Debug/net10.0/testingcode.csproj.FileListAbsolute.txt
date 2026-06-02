@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\testingcode\bin\Debug\net10.0\testingcode.exe
+C:\TAP\MygitRepo\.NET\testingcode\bin\Debug\net10.0\testingcode.deps.json
+C:\TAP\MygitRepo\.NET\testingcode\bin\Debug\net10.0\testingcode.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\testingcode\bin\Debug\net10.0\testingcode.dll
+C:\TAP\MygitRepo\.NET\testingcode\bin\Debug\net10.0\testingcode.pdb
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.sourcelink.json
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.dll
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\refint\testingcode.dll
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.pdb
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\testingcode.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\testingcode\obj\Debug\net10.0\ref\testingcode.dll
