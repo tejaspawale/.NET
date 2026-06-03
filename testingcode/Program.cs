@@ -1,22 +1,19 @@
 ﻿using System;
 
-public class HelloWorld
+class Program
 {
-    public void Greeting(string name)
+    static void PrintNames(params string[] names)
     {
-        Console.WriteLine("Hi Nice To Meet You: " + name);
+        foreach(string name in names)
+        {
+            Console.WriteLine(name);
+        }
     }
 
-    public static void Main(string[] args)
+    static void Main()
     {
-        if(args.Length > 0)
-        {
-            HelloWorld h = new HelloWorld();
-            h.Greeting(args[0]);
-        }
-        else
-        {
-            Console.WriteLine("Please provide a name.");
-        }
+        PrintNames("Tejas");
+        PrintNames("Tejas", "Amit");
+        PrintNames("Tejas", "Amit", "Rahul");
     }
 }
