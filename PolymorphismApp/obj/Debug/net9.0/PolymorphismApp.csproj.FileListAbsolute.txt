@@ -1,0 +1,14 @@
+C:\TAP\PolymorphismApp\PolymorphismApp\bin\Debug\net9.0\PolymorphismApp.exe
+C:\TAP\PolymorphismApp\PolymorphismApp\bin\Debug\net9.0\PolymorphismApp.deps.json
+C:\TAP\PolymorphismApp\PolymorphismApp\bin\Debug\net9.0\PolymorphismApp.runtimeconfig.json
+C:\TAP\PolymorphismApp\PolymorphismApp\bin\Debug\net9.0\PolymorphismApp.dll
+C:\TAP\PolymorphismApp\PolymorphismApp\bin\Debug\net9.0\PolymorphismApp.pdb
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.AssemblyInfoInputs.cache
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.AssemblyInfo.cs
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.csproj.CoreCompileInputs.cache
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.dll
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\refint\PolymorphismApp.dll
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.pdb
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\PolymorphismApp.genruntimeconfig.cache
+C:\TAP\PolymorphismApp\PolymorphismApp\obj\Debug\net9.0\ref\PolymorphismApp.dll
