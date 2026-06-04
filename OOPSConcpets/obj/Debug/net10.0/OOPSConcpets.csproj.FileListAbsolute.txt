@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.sourcelink.json
+C:\TAP\MygitRepo\.NET\OOPSConcpets\bin\Debug\net10.0\OOPSConcpets.exe
+C:\TAP\MygitRepo\.NET\OOPSConcpets\bin\Debug\net10.0\OOPSConcpets.deps.json
+C:\TAP\MygitRepo\.NET\OOPSConcpets\bin\Debug\net10.0\OOPSConcpets.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\OOPSConcpets\bin\Debug\net10.0\OOPSConcpets.dll
+C:\TAP\MygitRepo\.NET\OOPSConcpets\bin\Debug\net10.0\OOPSConcpets.pdb
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.dll
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\refint\OOPSConcpets.dll
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.pdb
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\OOPSConcpets.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\OOPSConcpets\obj\Debug\net10.0\ref\OOPSConcpets.dll
