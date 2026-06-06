@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\LMS\bin\Debug\net10.0\LMS.exe
+C:\TAP\MygitRepo\.NET\LMS\bin\Debug\net10.0\LMS.deps.json
+C:\TAP\MygitRepo\.NET\LMS\bin\Debug\net10.0\LMS.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\LMS\bin\Debug\net10.0\LMS.dll
+C:\TAP\MygitRepo\.NET\LMS\bin\Debug\net10.0\LMS.pdb
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.sourcelink.json
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.dll
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\refint\LMS.dll
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.pdb
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\LMS.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\LMS\obj\Debug\net10.0\ref\LMS.dll
