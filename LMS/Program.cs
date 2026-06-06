@@ -42,7 +42,7 @@ while (true)
             int id = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Student Name: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine().ToLower();
 
             Student student = new Student
             {
@@ -63,7 +63,7 @@ while (true)
             int id = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Instructor Name: ");
-            string name = Console.ReadLine();
+            string? name = Console.ReadLine().ToLower();
 
             Instructor instructor = new Instructor
             {
@@ -84,7 +84,7 @@ while (true)
             int courseId = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Course Name: ");
-            string courseName = Console.ReadLine();
+            string courseName = Console.ReadLine().ToLower();
 
             Console.Write("Duration: ");
             int duration = Convert.ToInt32(Console.ReadLine());
@@ -105,18 +105,34 @@ while (true)
         case 4:
         {
             Console.Write("Student Name: ");
-            string studentName = Console.ReadLine();
+            string studentName = Console.ReadLine().ToLower();
 
             Console.Write("Course Name: ");
-            string courseName = Console.ReadLine();
+            string courseName = Console.ReadLine().ToLower();
 
-            Student student =
-                manager.Students.FirstOrDefault(s => s.name == studentName);
+            Student student = null;
 
-            Course course =
-                manager.Courses.FirstOrDefault(c => c.CourseName == courseName);
+            Course course = null;
 
-            if (student != null && course != null)
+            foreach(Student s in manager.Students)
+            {
+                if(s.name == studentName)
+                {
+                    student = s;
+                    break;
+                }
+            }
+
+            foreach(Course c in manager.Courses)
+            {
+                if(c.CourseName == courseName)
+                {
+                    course = c;
+                    break;
+                }
+            }
+
+            if(student != null && course != null)
             {
                 student.EnrollCourse(course);
                 Console.WriteLine("Enrollment Successful.");
@@ -127,6 +143,8 @@ while (true)
             }
 
             break;
+
+            
         }
 
         case 5:
@@ -137,13 +155,29 @@ while (true)
             Console.Write("Course Name: ");
             string courseName = Console.ReadLine();
 
-            Instructor instructor =
-                manager.Instructors.FirstOrDefault(i => i.name == instructorName);
+            Instructor instructor = null;
 
-            Course course =
-                manager.Courses.FirstOrDefault(c => c.CourseName == courseName);
+            Course course = null;
 
-            if (instructor != null && course != null)
+            foreach(Instructor i in manager.Instructors)
+            {
+                if(i.name == instructorName)
+                {
+                    instructor = i;
+                    break;
+                }
+            }
+
+            foreach(Course c in manager.Courses)
+            {
+                if(c.CourseName == courseName)
+                {
+                    course = c;
+                    break;
+                }
+            }
+
+            if(instructor != null && course != null)
             {
                 instructor.AssignCourse(course);
                 course.AssignedInstructor = instructor;
@@ -156,7 +190,8 @@ while (true)
             }
 
             break;
-        }
+
+            }
 
         case 6:
         {

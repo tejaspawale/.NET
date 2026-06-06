@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TAP\\Practice\\Organization\\MyApp\\MyApp.csproj": {}
+    "C:\\TAP\\MygitRepo\\.NET\\Organization\\MyApp\\MyApp.csproj": {}
   },
   "projects": {
-    "C:\\TAP\\Practice\\Organization\\MyApp\\MyApp.csproj": {
+    "C:\\TAP\\MygitRepo\\.NET\\Organization\\MyApp\\MyApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TAP\\Practice\\Organization\\MyApp\\MyApp.csproj",
+        "projectUniqueName": "C:\\TAP\\MygitRepo\\.NET\\Organization\\MyApp\\MyApp.csproj",
         "projectName": "MyApp",
-        "projectPath": "C:\\TAP\\Practice\\Organization\\MyApp\\MyApp.csproj",
+        "projectPath": "C:\\TAP\\MygitRepo\\.NET\\Organization\\MyApp\\MyApp.csproj",
         "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
-        "outputPath": "C:\\TAP\\Practice\\Organization\\MyApp\\obj\\",
+        "outputPath": "C:\\TAP\\MygitRepo\\.NET\\Organization\\MyApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

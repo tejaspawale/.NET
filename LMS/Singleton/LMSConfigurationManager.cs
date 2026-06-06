@@ -6,9 +6,9 @@ public sealed class LMSConfigurationManager
 
     private LMSConfigurationManager()
     {
-        InstituteName = "ABC Institute";
-        Version = "1.0";
-        AdminContact = "admin@abc.com";
+        InstituteName = "Tap";
+        Version = "2.0";
+        AdminContact = "Transflower@gmail..com";
     }
 
     public string InstituteName { get; set; }
