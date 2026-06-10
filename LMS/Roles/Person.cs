@@ -1,4 +1,4 @@
-namespace Roles.persons;
+namespace Roles;
 
 public abstract class Person
 {

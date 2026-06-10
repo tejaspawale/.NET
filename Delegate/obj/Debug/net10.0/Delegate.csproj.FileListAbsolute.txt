@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Delegate\bin\Debug\net10.0\Delegate.exe
+C:\TAP\MygitRepo\.NET\Delegate\bin\Debug\net10.0\Delegate.deps.json
+C:\TAP\MygitRepo\.NET\Delegate\bin\Debug\net10.0\Delegate.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Delegate\bin\Debug\net10.0\Delegate.dll
+C:\TAP\MygitRepo\.NET\Delegate\bin\Debug\net10.0\Delegate.pdb
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.sourcelink.json
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.dll
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\refint\Delegate.dll
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.pdb
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\Delegate.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Delegate\obj\Debug\net10.0\ref\Delegate.dll

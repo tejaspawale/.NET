@@ -1,6 +1,6 @@
-using Interface.INotificationService;
+using Interfaces;
 
-namespace Service.SmsNotificationService;
+namespace Services;
 
 
 public class SmsNotificationService : INotificationService

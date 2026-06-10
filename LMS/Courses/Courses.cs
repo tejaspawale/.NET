@@ -1,6 +1,5 @@
-using Roles.Instructors;
-using Roles.Students;
-namespace Courses.Course;
+using Roles;
+namespace Courses;
 
 public class Course
 {

@@ -1,4 +1,4 @@
-namespace Interface.INotificationService;
+namespace Interfaces;
 
 public interface INotificationService
 {

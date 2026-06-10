@@ -1,6 +1,5 @@
-﻿using Data.LMSManager;
-using Roles.Students;
-using Roles.Instructors;
+﻿using Data;
+using Roles;
 using Courses.Course;
 using Interface.INotificationService;
 using Singleton.LMSConfigurationManager;

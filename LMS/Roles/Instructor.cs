@@ -1,8 +1,6 @@
 using Courses.Course;
-using Roles.persons;
-using Roles.Students;
 
-namespace Roles.Instructors;
+namespace Roles;
 
 public class Instructor : Person
 {

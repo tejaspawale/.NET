@@ -1,6 +1,6 @@
-using Interface.INotificationService;
+using Interfaces;
 
-namespace Service.EmailNotificationService;
+namespace Servicess;
 
 public class EmailNotificationService : INotificationService
 {

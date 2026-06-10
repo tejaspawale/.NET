@@ -1,5 +1,4 @@
-namespace Roles.Students;
-using Roles.persons;
+namespace Roles;
 using Courses.Course;
 
 
