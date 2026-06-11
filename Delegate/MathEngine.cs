@@ -1,9 +1,10 @@
 namespace  Engine;
+using Handlers;
 
 public class MathEngine
-{
-    public delegate double MatheOperation(double a, double b);   
-    public static double Add(double a, double b)
+{       
+    
+      public static double Add(double a, double b)
     {
         return a+b;
     }

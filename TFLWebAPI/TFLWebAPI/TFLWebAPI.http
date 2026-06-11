@@ -1,0 +1,6 @@
+@TFLWebAPI_HostAddress = http://localhost:5182
+
+GET {{TFLWebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

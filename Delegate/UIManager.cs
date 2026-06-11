@@ -1,9 +1,11 @@
 namespace UI;
 using Engine;
-
+using Handlers;
 public class UImanager
 {
+    public  event  Sender?  notify;
     MathEngine mEngine = new MathEngine();
+    
     public void DisplayMenu()
     {
         Console.WriteLine("===== Math Engine =====");
@@ -33,6 +35,7 @@ public class UImanager
                         double second = double.Parse(Console.ReadLine());
                         double op = mEngine.mathAdd(first, second);
                         Console.WriteLine($"Result: {op}");
+                        notify.Invoke("amount has been deducted from account");
                         
                     }
                     break;
@@ -58,6 +61,7 @@ public class UImanager
                         double second = double.Parse(Console.ReadLine());
                         double op = mEngine.mathMultiplication(first, second);
                         Console.WriteLine($"Result: {op}");
+                        notify.Invoke("amount has been deducted from account");
                         
                     }
                     break;
@@ -70,7 +74,7 @@ public class UImanager
                         double second = double.Parse(Console.ReadLine());
                         double op = mEngine.mathDivision(first, second);
                         Console.WriteLine($"Result: {op}");
-                        
+                        notify.Invoke("amount has been deducted from account");
                     }
                     break;
 
