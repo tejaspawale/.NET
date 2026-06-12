@@ -70,11 +70,12 @@ app.MapPost("/api/policies/paypremium", (Premium premium) =>
         insruanceManager.claimRegistered+=claims.OnClaimRegistered;
         insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
 
-insruanceManager.PayPremium(premium);
-return " Preimum paid succefully";
+        insruanceManager.PayPremium(premium);
+        return " Preimum paid succefully";
   
 });
-app.MapPost("/api/policies/registerclaim", () =>
+
+app.MapPost("/api/policies/registerclaim", (Claim claim) =>
 {
   
         InsurancePolicyManager insruanceManager=new InsurancePolicyManager();
@@ -84,17 +85,17 @@ app.MapPost("/api/policies/registerclaim", () =>
         RenewalDepartment renewals=new RenewalDepartment();
 
         EmailNotificationService emailSvc=new EmailNotificationService();
-               
         insruanceManager.policyPurchased+=sales.OnPolicyPurchased;
         insruanceManager.policyPurchased+=emailSvc.SendMessage;
 
         insruanceManager.premiumPaid+=accounts.RecordPayment;
         insruanceManager.claimRegistered+=claims.OnClaimRegistered;
         insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
-
+        insruanceManager.RegisterClaim(claim);
+        return "Claim is Register";
 
 });
-app.MapPost("api/policies/renew", () =>
+app.MapPost("/api/policies/renew", (Policy policy) =>
 {
   
         InsurancePolicyManager insruanceManager=new InsurancePolicyManager();
@@ -104,14 +105,19 @@ app.MapPost("api/policies/renew", () =>
         RenewalDepartment renewals=new RenewalDepartment();
 
         EmailNotificationService emailSvc=new EmailNotificationService();
-               
         insruanceManager.policyPurchased+=sales.OnPolicyPurchased;
         insruanceManager.policyPurchased+=emailSvc.SendMessage;
 
         insruanceManager.premiumPaid+=accounts.RecordPayment;
         insruanceManager.claimRegistered+=claims.OnClaimRegistered;
         insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
+          bool status = insruanceManager.RenewPolicy(policy.PolicyNumber);
+        if(status)
+        {
+                return Results.Ok("Policy Renewed Successfully");
+        }
 
+ return Results.NotFound("Policy Not Found");
 
 });
  

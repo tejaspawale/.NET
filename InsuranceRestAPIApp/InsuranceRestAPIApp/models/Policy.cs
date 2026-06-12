@@ -11,6 +11,8 @@ public class Policy
     public string PolicyType { get; set; }
     public decimal PremiumAmount { get; set; }
 
+    public bool IsRenewed { get; set; } = false;
+
     public Policy()
     {
         
