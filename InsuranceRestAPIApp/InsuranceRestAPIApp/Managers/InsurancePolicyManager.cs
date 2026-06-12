@@ -36,11 +36,11 @@ public class InsurancePolicyManager
         policyRenewed.Invoke();
         Console.WriteLine(" Existing Policy renewed Successfully");
     }
-      public void  PayPremium(Claim claim)
+      public void  PayPremium(Premium premium)
     {
-         List<Claim> claims =GetAllPremimum();
-        claims.Add(claim);
-        this.SaveAllPremium(claims);
+        List<Premium> premiums =GetAllPremimum();
+        premiums.Add(premium);
+        this.SaveAllPremium(premiums);
         policyPurchased.Invoke(); 
         premiumPaid.Invoke();
         Console.WriteLine("Premium is paid Successfully");
@@ -67,22 +67,22 @@ public class InsurancePolicyManager
         return status;
     }
 
-      public List<Claim> GetAllPremimum()
+      public List<Premium> GetAllPremimum()
     {
-        string fileName=@"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\claim.json";
+        string fileName=@"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\payPremuim.json";
         string jsonString=File.ReadAllText(fileName);
         var options = new JsonSerializerOptions{ PropertyNameCaseInsensitive = true};
-        List<Claim>? claims =JsonSerializer.Deserialize<List<Claim>>(jsonString,options);
-        return   claims;
+        List<Premium>? premiums =JsonSerializer.Deserialize<List<Premium>>(jsonString,options);
+        return   premiums;
     }
 
 
-    public bool  SaveAllPremium(List<Claim> claims)
+    public bool  SaveAllPremium(List<Premium> premiums)
     {
         bool status=false;
-        string fileName=@"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\claim.json";
+        string fileName=@"C:\TAP\MygitRepo\.NET\InsuranceRestAPIApp\InsuranceRestAPIApp\Data\payPremuim.json";
         var options = new JsonSerializerOptions{ PropertyNameCaseInsensitive = true};
-        string jsonString=JsonSerializer.Serialize(claims,options);
+        string jsonString=JsonSerializer.Serialize(premiums,options);
         File.WriteAllText(fileName, jsonString);
         status=true;
         return status;

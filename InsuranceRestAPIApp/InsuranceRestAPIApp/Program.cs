@@ -52,7 +52,7 @@ app.MapPost("/api/policies/purchase", (Policy policy) =>
   return " Policy Purchased Successfully";
 });
 
-app.MapPost("/api/policies/paypremium", (Claim claim) =>
+app.MapPost("/api/policies/paypremium", (Premium premium) =>
 {
   
         InsurancePolicyManager insruanceManager=new InsurancePolicyManager();
@@ -70,7 +70,7 @@ app.MapPost("/api/policies/paypremium", (Claim claim) =>
         insruanceManager.claimRegistered+=claims.OnClaimRegistered;
         insruanceManager.premiumPaid+=renewals.OnPolicyRenewed;
 
-insruanceManager.PayPremium(claim);
+insruanceManager.PayPremium(premium);
 return " Preimum paid succefully";
   
 });
