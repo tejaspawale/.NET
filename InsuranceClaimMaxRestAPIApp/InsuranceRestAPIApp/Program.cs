@@ -127,45 +127,45 @@ app.MapPost("/api/claims/reject", (Claim claim) =>
 
 
 
-// // Cancel policy
-// app.MapPost("/api/policies/cancel/{policyNumber}", (string policyNumber) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+// Cancel policy
+app.MapPost("/api/policies/cancel/{policyNumber}", (string policyNumber) =>
+{
+    SalesManager salesManager = new SalesManager();
+    AccountsDepartment accountsDepartment=new AccountsDepartment();
 
-//     manager.CancelPolicy(policyNumber);
+    salesManager.policyCancelled+=accountsDepartment.OnPolicyCancel;
 
-//     return Results.Ok("Policy cancelled successfully.");
-// });
+    salesManager.CancelPolicy(policyNumber);
+    return Results.Ok("Policy cancelled successfully.");
+});
 
-// // Send renewal reminder
-// app.MapPost("/api/policies/reminder/{policyNumber}", (string policyNumber) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+// Send renewal reminder
+app.MapPost("/api/policies/reminder/{policyNumber}", (string policyNumber) =>
+{
+    RenewalManager renewalManager = new RenewalManager();
+    SMSNotificationService sms = new SMSNotificationService();
+    EmailNotificationService emailService = new EmailNotificationService();
 
-//     EmailNotificationService emailService =
-//         new EmailNotificationService();
+    renewalManager.renewalReminderSent += emailService.OnRenewalReminderSent;
+    renewalManager.renewalReminderSent += sms.OnRenewalReminderSent;
 
-//     manager.renewalReminderSent += emailService.OnRenewalReminderSent;
+    renewalManager.SendRenewalReminder(policyNumber);
+    return Results.Ok("Renewal reminder sent.");
+});
 
-//     manager.SendRenewalReminder(policyNumber);
+// Generate policy document
+app.MapPost("/api/policies/document/{policyNumber}", (string policyNumber) =>
+{
+    PolicyAdminManager policyAdminManager = new PolicyAdminManager();
+    SMSNotificationService sms = new SMSNotificationService();
+    EmailNotificationService emailService = new EmailNotificationService();
 
-//     return Results.Ok("Renewal reminder sent.");
-// });
+    policyAdminManager.policyDocumentGenerated += emailService.OnPolicyDocumentSent;
+    policyAdminManager.policyDocumentGenerated +=sms.OnPolicyDocumentSent;
 
-// // Generate policy document
-// app.MapPost("/api/policies/document/{policyNumber}", (string policyNumber) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
-
-//     EmailNotificationService emailService =
-//         new EmailNotificationService();
-
-//     manager.policyDocumentSent += emailService.OnPolicyDocumentSent;
-
-//     manager.SendPolicyDocument(policyNumber);
-
-//     return Results.Ok("Policy document sent.");
-// });
+    policyAdminManager.SendPolicyDocument(policyNumber);
+    return Results.Ok("Policy document sent.");
+});
 
 
 app.Run();
