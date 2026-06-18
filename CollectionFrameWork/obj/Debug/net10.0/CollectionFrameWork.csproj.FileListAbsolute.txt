@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\bin\Debug\net10.0\CollectionFrameWork.exe
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\bin\Debug\net10.0\CollectionFrameWork.deps.json
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\bin\Debug\net10.0\CollectionFrameWork.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\bin\Debug\net10.0\CollectionFrameWork.dll
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\bin\Debug\net10.0\CollectionFrameWork.pdb
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.sourcelink.json
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.dll
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\refint\CollectionFrameWork.dll
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.pdb
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\CollectionFrameWork.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\CollectionFrameWork\obj\Debug\net10.0\ref\CollectionFrameWork.dll

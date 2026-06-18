@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "d8u4kJTnOU8=",
+  "success": true,
+  "projectFilePath": "C:\\TAP\\MygitRepo\\.NET\\O\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Shubham\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.1\\microsoft.aspnetcore.openapi.10.0.1.nupkg.sha512",
+    "C:\\Users\\Shubham\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
