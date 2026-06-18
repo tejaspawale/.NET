@@ -1,20 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "A:\\TAP\\GitHub\\DotNet\\insuranceapp\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj": {}
+    "C:\\TAP\\MygitRepo\\.NET\\InsuranceClaimMaxRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj": {}
   },
   "projects": {
-    "A:\\TAP\\GitHub\\DotNet\\insuranceapp\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj": {
+    "C:\\TAP\\MygitRepo\\.NET\\InsuranceClaimMaxRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "A:\\TAP\\GitHub\\DotNet\\insuranceapp\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
+        "projectUniqueName": "C:\\TAP\\MygitRepo\\.NET\\InsuranceClaimMaxRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
         "projectName": "InsuranceRestAPIApp",
-        "projectPath": "A:\\TAP\\GitHub\\DotNet\\insuranceapp\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
-        "packagesPath": "C:\\Users\\91997\\.nuget\\packages\\",
-        "outputPath": "A:\\TAP\\GitHub\\DotNet\\insuranceapp\\InsuranceRestAPIApp\\InsuranceRestAPIApp\\obj\\",
+        "projectPath": "C:\\TAP\\MygitRepo\\.NET\\InsuranceClaimMaxRestAPIApp\\InsuranceRestAPIApp\\InsuranceRestAPIApp.csproj",
+        "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
+        "outputPath": "C:\\TAP\\MygitRepo\\.NET\\InsuranceClaimMaxRestAPIApp\\InsuranceRestAPIApp\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\91997\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Shubham\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -40,7 +44,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -70,7 +74,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.204/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.AspNetCore": "(,10.0.32767]",
             "Microsoft.AspNetCore.Antiforgery": "(,10.0.32767]",

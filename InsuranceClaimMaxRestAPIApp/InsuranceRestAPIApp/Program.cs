@@ -77,7 +77,7 @@ app.MapPost("/api/claims/approve/", (Claim claim) =>
 
     claimsManager.ApproveClaim(claim);
 
-    return Results.Ok("Claim approved successfully.");
+    return Results.Ok("Claim approved Check you status.");
 });
 
 
@@ -91,53 +91,40 @@ app.MapGet("/api/policies", () =>
 });
 
 
-// // Register a customer
-// app.MapPost("/api/customers/register", (Customer customer) =>
-// {
-//     CustomerManager customerManager = new CustomerManager();
+// Register a customer
+app.MapPost("/api/customers/register", (Customer customer) =>
+{
+    CustomerManager customerManager = new CustomerManager();
 
-//     CustomerServiceDepartment customerService =
-//         new CustomerServiceDepartment();
+    CustomerServiceDepartment customerService =new CustomerServiceDepartment();
 
-//     customerManager.customerRegistered += customerService.OnCustomerRegistered;
+    customerManager.customerRegistered += customerService.OnCustomerRegistered;
+    
 
-//     customerManager.RegisterCustomer(customer);
+    customerManager.RegisterCustomer(customer);
 
-//     return Results.Ok("Customer registered successfully.");
-// });
-
-
+    return Results.Ok("Customer registered successfully.");
+});
 
 
-// // Reject claim
-// app.MapPost("/api/claims/reject", (Claim claim) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
 
-//     ClaimDepartment claims = new ClaimDepartment();
 
-//     manager.claimRejected += claims.OnClaimRejected;
+// Reject claim
+app.MapPost("/api/claims/reject", (Claim claim) =>
+{
+    ClaimsManager claimsManager = new ClaimsManager();
 
-//     manager.RejectClaim(claim);
+    ClaimDepartment claims = new ClaimDepartment();
 
-//     return Results.Ok("Claim rejected successfully.");
-// });
+    claimsManager.claimRejected += claims.OnClaimRejected;
 
-// // Settle claim
-// app.MapPost("/api/claims/settle", (Claim claim) =>
-// {
-//     InsurancePolicyManager manager = new InsurancePolicyManager();
+    claimsManager.RejectClaim(claim);
 
-//     ClaimDepartment claims = new ClaimDepartment();
-//     AccountsDepartment accounts = new AccountsDepartment();
+    return Results.Ok("Claim rejected successfully.");
+});
 
-//     manager.claimSettled += claims.OnClaimSettled;
-//     manager.claimSettled += accounts.OnClaimSettled;
 
-//     manager.SettleClaim(claim);
 
-//     return Results.Ok("Claim settled successfully.");
-// });
 
 
 // // Cancel policy

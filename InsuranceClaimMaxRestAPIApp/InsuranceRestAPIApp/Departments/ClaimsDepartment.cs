@@ -57,6 +57,7 @@ public class ClaimDepartment
         List<Claim> claims = claimsRepository.GetAllRegisterClaim();
 
         foreach (Claim claim2 in claims)
+        
         {
             if(claim2.ClaimId == claim.ClaimId)
             {
@@ -73,6 +74,7 @@ public class ClaimDepartment
                   
                 }
             }
+        }
 
             if(status)
             {
@@ -89,16 +91,48 @@ public class ClaimDepartment
                 Console.WriteLine("====================================");
             }
            
-        }
+        
     }
-    public void OnClaimRejected(Claim claim)
+   public void OnClaimRejected(Claim claim)
     {
-        Console.WriteLine("====================================");
-        Console.WriteLine($"Claim {claim.ClaimId} rejected.");
-        Console.WriteLine("Customer will be notified with the reason.");
+       bool isEligibleForReject = false;
+
+        
+        ClaimsRepository claimsRepository = new ClaimsRepository();
+        List<Claim> claims = claimsRepository.GetAllRegisterClaim();
+
+       Console.WriteLine("====================================");
+        Console.WriteLine("Claim Department");
+        Console.WriteLine($"Policy Rejecting  Requested: {claim.ClaimId}");
+
+        Console.WriteLine("Checking policy validity...");
+
+        foreach (Claim c in claims)
+        {
+            if(c.ClaimId == claim.ClaimId)
+            {
+                if(c.Status=="Registered" )
+                {
+                    c.Status = "Rejected";
+                    isEligibleForReject=true;
+                    claimsRepository.SaveRegisterClaim(claims);
+                }
+            }
+        }
+        // Simulated validation logic
+
+        if (isEligibleForReject)
+        {
+            Console.WriteLine("Policy is eligible for rejecting.");
+            Console.WriteLine("Renewal process initiated.");
+        }
+        else
+        {
+            Console.WriteLine("Policy is not eligible for rejecting.");
+        }
+
         Console.WriteLine("====================================");
     }
-
     public void OnClaimSettled(Claim claim)
     {
         Console.WriteLine("====================================");

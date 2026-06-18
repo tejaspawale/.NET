@@ -1,26 +1,26 @@
 using MaxNewYorkInsurance.Models;
+using MaxNewYorkInsurance.Repositories;
 
 namespace MaxNewYorkInsurance.Departments;
 
 public class CustomerServiceDepartment
 {
+    
     public void OnCustomerRegistered(Customer customer)
     {
+        CustomerRepository customerRepository = new CustomerRepository();
+        List<Customer> customers = customerRepository.GetAllCustomer();
+        customers.Add(customer);
+        customerRepository.SaveAllCustomer(customers);
+
+    
+
         Console.WriteLine("====================================");
         Console.WriteLine("Customer Service Department");
         Console.WriteLine($"Customer '{customer.FullName + customer.LastName}' registered successfully.");
         Console.WriteLine("Welcome email and onboarding process initiated.");
         Console.WriteLine("====================================");
     }
-
-    public void OnCustomerUpdated(Customer customer)
-    {
-        Console.WriteLine("====================================");
-        Console.WriteLine("Customer profile updated.");
-        Console.WriteLine($"Customer: {customer.FullName + customer.LastName}");
-        Console.WriteLine("====================================");
-    }
-
     public void OnCustomerDeactivated(int customerId)
     {
         Console.WriteLine("====================================");

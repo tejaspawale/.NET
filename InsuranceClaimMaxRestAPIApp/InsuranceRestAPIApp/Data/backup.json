@@ -1,0 +1,270 @@
+[
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL1003",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL1005",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL2498",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL4444",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 0,
+        "PolicyId": 0,
+        "PolicyNumber": "POL1051",
+        "CustomerId": 0,
+        "CustomerName": "John Smith",
+        "AmountPaid": 0,
+        "PaymentDate": "0001-01-01T00:00:00",
+        "PaymentMode": "",
+        "TransactionId": "",
+        "PaymentFrequency": "",
+        "PaymentStatus": "Success",
+        "Remarks": ""
+    },
+    {
+        "PremiumId": 1,
+        "PolicyId": 101,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 501,
+        "CustomerName": "John Smith",
+        "AmountPaid": 25000.50,
+        "PaymentDate": "2026-06-17T10:30:00",
+        "PaymentMode": "UPI",
+        "TransactionId": "TXN987654321",
+        "PaymentFrequency": "Annual",
+        "PaymentStatus": "Success",
+        "Remarks": "Premium paid on time"
+    },
+
+    {
+        "ClaimId": 1001,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Accident",
+        "ClaimAmount": 25000,
+        "ApprovedAmount": 22500,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1002,
+        "PolicyNumber": "POL6666",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Health issue",
+        "ClaimAmount": 2600,
+        "ApprovedAmount": 0,
+        "Status": "Registered",
+        "Remarks": "",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1003,
+        "PolicyNumber": "POL24298",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Eye sugery",
+        "ClaimAmount": 500000,
+        "ApprovedAmount": 0,
+        "Status": "Registered",
+        "Remarks": "",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1004,
+        "PolicyNumber": "POL24298",
+        "CustomerId": 0,
+        "CustomerName": "",
+        "ClaimDate": "0001-01-01T00:00:00",
+        "ClaimType": "",
+        "Reason": "Eye sugery",
+        "ClaimAmount": 500000,
+        "ApprovedAmount": 450000,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": null
+    },
+    {
+        "ClaimId": 1005,
+        "PolicyNumber": "POL1051",
+        "CustomerId": 101,
+        "CustomerName": "Ravi Tambade",
+        "ClaimDate": "2026-06-17T09:30:00",
+        "ClaimType": "Health",
+        "Reason": "Hospitalization due to illness",
+        "ClaimAmount": 50000.00,
+        "ApprovedAmount": 45000.00,
+        "Status": "Approved",
+        "Remarks": "Documents verified successfully",
+        "SettlementDate": "2026-06-20T10:00:00"
+    },
+    {
+        "PolicyNumber": "POL1001",
+        "CustomerName": "Ravi Tambade",
+        "PolicyType": "Term",
+        "PolicyAmount": 0,
+        "IsRenewed": true
+    },
+    {
+        "PolicyNumber": "POL1002",
+        "CustomerName": "Sejal Kulkarni",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true
+    },
+    {
+        "PolicyNumber": "POL1003",
+        "CustomerName": "Tejas Pawale",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": false
+    },
+    {
+        "PolicyNumber": "POL1004",
+        "CustomerName": "Pranita Mane",
+        "PolicyType": "Agri",
+        "PolicyAmount": 0,
+        "IsRenewed": false
+    },
+    {
+        "PolicyNumber": "POL1005",
+        "CustomerName": "Sahil Kamble",
+        "PolicyType": "Vehicle",
+        "PolicyAmount": 0,
+        "IsRenewed": false
+    },
+    {
+        "PolicyNumber": "POL1999",
+        "CustomerName": "Sachin Kharat",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true
+    },
+    {
+        "PolicyNumber": "POL19876",
+        "CustomerName": "Prasad Tambade",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": false
+    },
+    {
+        "PolicyNumber": "POL0025",
+        "CustomerName": "Anish",
+        "PolicyType": "Health",
+        "PolicyAmount": 0,
+        "IsRenewed": true
+    },
+    {
+        "PolicyNumber": "POL2424",
+        "CustomerName": "tejas naudalkar",
+        "PolicyType": "bike",
+        "PolicyAmount": 0,
+        "IsRenewed": false
+    },
+    {
+        "PolicyNumber": "POL1051",
+        "CustomerName": "John Smith",
+        "PolicyType": "Health Insurance",
+        "PolicyAmount": 0,
+        "IsRenewed": true
+    }
+,
+    {
+        "PremiumId": 1,
+        "PolicyId": 101,
+        "PolicyNumber": "POL1001",
+        "CustomerId": 501,
+        "CustomerName": "John Smith",
+        "AmountPaid": 25000.50,
+        "PaymentDate": "2026-06-17T10:30:00",
+        "PaymentMode": "UPI",
+        "TransactionId": "TXN987654321",
+        "PaymentFrequency": "Annual",
+        "PaymentStatus": "Success",
+        "Remarks": "Premium paid on time"
+    }
+]
