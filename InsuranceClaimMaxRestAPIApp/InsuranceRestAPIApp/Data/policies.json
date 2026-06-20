@@ -1,1 +1,9 @@
-[{"PolicyNumber":"POL1001","CustomerName":"shubham pawale","PolicyType":"Health","PolicyAmount":1500000,"IsRenewed":false}]
+[
+    {
+        "PolicyNumber": "POL1001",
+        "CustomerName": "shubham pawale",
+        "PolicyType": "Health",
+        "PolicyAmount": 1500000,
+        "IsRenewed": false
+    }
+]

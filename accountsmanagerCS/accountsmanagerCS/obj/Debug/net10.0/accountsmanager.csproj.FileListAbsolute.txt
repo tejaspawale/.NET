@@ -1,0 +1,30 @@
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\bin\Debug\net10.0\accountsmanager.exe
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\bin\Debug\net10.0\accountsmanager.deps.json
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\bin\Debug\net10.0\accountsmanager.runtimeconfig.json
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\bin\Debug\net10.0\accountsmanager.dll
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\bin\Debug\net10.0\accountsmanager.pdb
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.GeneratedMSBuildEditorConfig.editorconfig
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.AssemblyInfoInputs.cache
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.AssemblyInfo.cs
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.csproj.CoreCompileInputs.cache
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.sourcelink.json
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.dll
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\refint\accountsmanager.dll
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.pdb
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\accountsmanager.genruntimeconfig.cache
+D:\TFL\new tfl\TFLDOTNET\DotNet\AccountListner in CS\accountsmanager\obj\Debug\net10.0\ref\accountsmanager.dll
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\bin\Debug\net10.0\accountsmanager.exe
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\bin\Debug\net10.0\accountsmanager.deps.json
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\bin\Debug\net10.0\accountsmanager.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\bin\Debug\net10.0\accountsmanager.dll
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\bin\Debug\net10.0\accountsmanager.pdb
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.sourcelink.json
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.dll
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\refint\accountsmanager.dll
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.pdb
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\accountsmanager.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\obj\Debug\net10.0\ref\accountsmanager.dll
