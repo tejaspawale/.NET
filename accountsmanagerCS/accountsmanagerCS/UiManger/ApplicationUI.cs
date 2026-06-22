@@ -1,4 +1,6 @@
 using AccountsManager.publisher;
+using AccountsManager.repository;
+using AccountsManager.Models;
 
 namespace AccountsManager.Ui;
 
@@ -19,10 +21,10 @@ public class UiManager
             Console.WriteLine("2. Withdraw");
             Console.WriteLine("3. Fund Transfer");
             Console.WriteLine("4. Check Balance");
-            Console.WriteLine("5. Exit");
+            Console.WriteLine("5. MiniStatement");
+            Console.WriteLine("6. Exit");
 
-            int choice =
-                Convert.ToInt32(Console.ReadLine());
+            int choice = Convert.ToInt32(Console.ReadLine());
 
             switch(choice)
             {
@@ -43,7 +45,11 @@ public class UiManager
                     break;
 
                 case 5:
+                        MiniStatement();
+                        break;
+                case 6:
                     return;
+
             }
         }
     }
@@ -56,7 +62,7 @@ public class UiManager
         Console.Write("Amount : ");
         double amount = Convert.ToDouble(Console.ReadLine());
 
-        accountDepartment.deposit(accNo, amount);
+        accountDepartment.Deposit(accNo, amount);
     }
 
     public void WithdrawUI()
@@ -67,7 +73,7 @@ public class UiManager
         Console.Write("Amount : ");
         double amount =Convert.ToDouble(Console.ReadLine());
 
-        accountDepartment.withdraw(accNo, amount);
+        accountDepartment.Withdraw(accNo, amount);
     }
 
     public void FundTransferUI()
@@ -89,6 +95,29 @@ public class UiManager
         Console.Write("Account No : ");
         int accNo = Convert.ToInt32(Console.ReadLine());
         
-        accountDepartment.getBalance(accNo);
+        accountDepartment.GetBalance(accNo);
     }
+
+ public void MiniStatement()
+{
+    Console.Write("Account No : ");
+    int accNo = Convert.ToInt32(Console.ReadLine());
+
+    List<Operations> statements = accountDepartment.GetMiniStatement(accNo);
+
+    Console.WriteLine("\nMini Statement");
+
+    foreach (Operations operation in statements)
+    {
+        Console.WriteLine( $"Date : {operation.Transactiontime}");
+
+        Console.WriteLine( $"Debit : {operation.DebitAccNo}");
+
+        Console.WriteLine($"Credit : {operation.creditAccNo}");
+
+        Console.WriteLine( $"Amount : {operation.amount}");
+
+        Console.WriteLine("-------------------");
+    }
+}
 }

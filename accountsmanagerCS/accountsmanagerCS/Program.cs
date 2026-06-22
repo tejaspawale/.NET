@@ -21,7 +21,7 @@ class Program
 
         AccountsDepartment listener = new AccountsDepartment();
 
-        accountDepartment.addListener(listener);
+        accountDepartment.AddListener(listener);
 
         UiManager uiManager =new UiManager(accountDepartment);
 

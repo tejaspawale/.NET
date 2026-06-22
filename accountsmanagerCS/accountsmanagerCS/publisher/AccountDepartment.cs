@@ -21,7 +21,7 @@ public class AccountDepartment : FundTransferOperation
     public List<AccountListener> listeners = new List<AccountListener>();
 
 
-    public double getBalance(int AccountNo)
+    public double GetBalance(int AccountNo)
     {
         foreach (Account account in accounts)
         {
@@ -38,7 +38,7 @@ public class AccountDepartment : FundTransferOperation
         return 0;
     }
 
-    public void deposit(double AccountNo, double amount)
+    public void Deposit(double AccountNo, double amount)
 {
     foreach (Account account in accounts)
     {
@@ -49,7 +49,7 @@ public class AccountDepartment : FundTransferOperation
 
             Console.WriteLine($"Balance in account with id {account.AccountNo} after deposit is {account.balance}");
 
-            checkBalance(account);
+            CheckBalance(account);
 
             accountRepository.SaveAllAccounts(accounts);
 
@@ -57,7 +57,7 @@ public class AccountDepartment : FundTransferOperation
         }
     }
 }
-    public void withdraw(double AccountNo, double amount)
+    public void Withdraw(double AccountNo, double amount)
 {
     foreach (Account account in accounts)
     {
@@ -77,7 +77,7 @@ public class AccountDepartment : FundTransferOperation
 }
 
 
-    public void checkBalance(Account a)
+    public void CheckBalance(Account a)
     {
         if (a.balance < 1000)
         {
@@ -124,9 +124,9 @@ public void FundTransfer(double fromAccount,double toAccount,double amount)
         return;
     }
 
-    withdraw(fromAccount, amount);
+    Withdraw(fromAccount, amount);
 
-    deposit(toAccount, amount);
+    Deposit(toAccount, amount);
 
     Operations operation = new Operations()
     {
@@ -143,6 +143,33 @@ public void FundTransfer(double fromAccount,double toAccount,double amount)
     operationsRepository.SaveAllOperations(operations);
 
     Console.WriteLine("Transfer Successful");
+}
+
+public   int CompareTransactions(Operations op1,Operations op2)
+{     int CompareTras =op2.Transactiontime.CompareTo(op1.Transactiontime);
+    return CompareTras;
+}
+public  List<Operations> GetMiniStatement(int accountNumber)
+{
+    List<Operations> statements = new List<Operations>();
+    List<Operations> operations = operationsRepository.GetAllOperations();
+
+    foreach (Operations Operation in operations)
+    {
+        if (Operation.DebitAccNo == accountNumber ||
+            Operation.creditAccNo == accountNumber)
+        {
+            statements.Add(Operation);
+        }
+    }
+    statements.Sort(CompareTransactions);
+
+    if (statements.Count > 5)
+    {
+        statements = statements.GetRange(0, 5);
+    }
+
+    return statements;
 }
 
     // public void FundTransfer(double fromAccout, double ToAccount, double amount)
@@ -175,7 +202,7 @@ public void FundTransfer(double fromAccount,double toAccount,double amount)
 
     
 
-    public void addListener(AccountListener listener)
+    public void AddListener(AccountListener listener)
     {
         listeners.Add(listener);
 

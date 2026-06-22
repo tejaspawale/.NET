@@ -1,4 +1,4 @@
 namespace AccountsManager.publisher.operations;
 public interface  DepositOperation {
-    void deposit(double amount);
+    void Deposit(double amount);
 }
