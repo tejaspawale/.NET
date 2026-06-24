@@ -26,5 +26,8 @@ class Program
         UiManager uiManager =new UiManager(accountDepartment);
 
         uiManager.ShowMenu();
+
+
+        
     }
 }

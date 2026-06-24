@@ -66,8 +66,7 @@ public class AccountDepartment : FundTransferOperation
             account.balance -= amount;
             account.lastTransaction = DateTime.Now;
 
-            Console.WriteLine(
-                $"Balance in account with id {account.AccountNo} after withdraw is {account.balance}");
+            Console.WriteLine( $"Balance in account with id {account.AccountNo} after withdraw is {account.balance}");
 
             accountRepository.SaveAllAccounts(accounts);
 
@@ -172,6 +171,28 @@ public  List<Operations> GetMiniStatement(int accountNumber)
     return statements;
 }
 
+public void CalculateInterest(double accountNo)
+{
+    foreach(Account a in accounts)
+    {
+        if(a.AccountNo == accountNo)
+        {
+            double interest = a.balance * a.InterestRate / 100;
+
+            a.balance += interest; 
+
+            a.lastTransaction = DateTime.Now;
+
+            Console.WriteLine($"Interest Credited : {interest}");
+            Console.WriteLine($"Current Balance : {a.balance}");
+
+            accountRepository.SaveAllAccounts(accounts);
+            return;
+        }
+    }
+
+    Console.WriteLine("Account Not Found");
+}
     // public void FundTransfer(double fromAccout, double ToAccount, double amount)
 
     // {

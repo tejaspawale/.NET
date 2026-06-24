@@ -15,7 +15,8 @@ public class AccountRepository
         return accounts;
     }
 
-    public bool SaveAllAccounts(List<Account> accounts)
+    public bool 
+    SaveAllAccounts(List<Account> accounts)
     {
         bool status = false;
         string fileName = @"C:\TAP\MygitRepo\.NET\accountsmanagerCS\accountsmanagerCS\data\accounts.json";

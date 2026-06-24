@@ -7,6 +7,7 @@ public class Account
     public int AccountNo {get; set;}
     public double balance {get; set;}
     public DateTime lastTransaction {get; set;}
+    public double InterestRate{get; set;} = 4;
 
    
    public Account()

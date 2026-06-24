@@ -22,7 +22,8 @@ public class UiManager
             Console.WriteLine("3. Fund Transfer");
             Console.WriteLine("4. Check Balance");
             Console.WriteLine("5. MiniStatement");
-            Console.WriteLine("6. Exit");
+            Console.WriteLine("6. Interest Rate");
+            Console.WriteLine("7. Exit");
 
             int choice = Convert.ToInt32(Console.ReadLine());
 
@@ -48,6 +49,10 @@ public class UiManager
                         MiniStatement();
                         break;
                 case 6:
+                        InterestRate();
+                        break;
+
+                case 7:
                     return;
 
             }
@@ -97,6 +102,15 @@ public class UiManager
         
         accountDepartment.GetBalance(accNo);
     }
+
+    public void InterestRate()
+    {
+        Console.Write("Account No : ");
+        int accNo = Convert.ToInt32(Console.ReadLine());
+        
+        accountDepartment.CalculateInterest(accNo);
+    }
+    
 
  public void MiniStatement()
 {
