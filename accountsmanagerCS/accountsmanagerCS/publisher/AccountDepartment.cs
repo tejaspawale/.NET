@@ -6,7 +6,7 @@ using AccountsManager.repository;
 
 namespace AccountsManager.publisher;
 
-public class AccountDepartment : FundTransferOperation
+public class AccountDepartment : IFundTransferOperation,IDepositOperation,IWithdrawOperation,IMiniStatementOperations,ICalculateInterestOperation
 {
     List<Account> accounts { get; set; }
     NotificationService service;
@@ -97,6 +97,9 @@ public class AccountDepartment : FundTransferOperation
         }
     }
 
+
+
+
 public void FundTransfer(double fromAccount,double toAccount,double amount)
 {
     Account? sender = null;
@@ -144,10 +147,11 @@ public void FundTransfer(double fromAccount,double toAccount,double amount)
     Console.WriteLine("Transfer Successful");
 }
 
-public   int CompareTransactions(Operations op1,Operations op2)
+public int CompareTransactions(Operations op1,Operations op2)
 {     int CompareTras =op2.Transactiontime.CompareTo(op1.Transactiontime);
     return CompareTras;
 }
+
 public  List<Operations> GetMiniStatement(int accountNumber)
 {
     List<Operations> statements = new List<Operations>();
@@ -171,6 +175,7 @@ public  List<Operations> GetMiniStatement(int accountNumber)
     return statements;
 }
 
+
 public void CalculateInterest(double accountNo)
 {
     foreach(Account a in accounts)
@@ -193,34 +198,6 @@ public void CalculateInterest(double accountNo)
 
     Console.WriteLine("Account Not Found");
 }
-    // public void FundTransfer(double fromAccout, double ToAccount, double amount)
-
-    // {
-    //     foreach (Account account in accounts)
-    //     {
-    //         if (account.AccountNo == fromAccout)
-    //         {
-    //             withdraw(fromAccout, amount);
-    //             account.lastTransaction = DateTime.Now;
-    //             accountRepository.SaveAllAccounts(accounts);
-    //             Console.WriteLine($"Balance in account with id {account.AccountNo} after Withdraw is {account.balance}");
-         
-    //         }
-    //     }
-
-    //     foreach (Account a in accounts)
-    //     {
-    //         if (a.AccountNo == ToAccount)
-    //         {
-    //             deposit(ToAccount, amount);
-    //             a.lastTransaction = DateTime.Now;
-    //             accountRepository.SaveAllAccounts(accounts);
-    //             Console.WriteLine($"Balance in account with id {a.AccountNo} after Withdraw is {a.balance}");
-           
-    //         }
-    //     }
-
-
     
 
     public void AddListener(AccountListener listener)
@@ -228,6 +205,5 @@ public void CalculateInterest(double accountNo)
         listeners.Add(listener);
 
     }
-
 
 }

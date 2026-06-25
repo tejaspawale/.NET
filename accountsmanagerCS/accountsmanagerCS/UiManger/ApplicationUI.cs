@@ -119,6 +119,7 @@ public class UiManager
 
     List<Operations> statements = accountDepartment.GetMiniStatement(accNo);
 
+
     Console.WriteLine("\nMini Statement");
 
     foreach (Operations operation in statements)
