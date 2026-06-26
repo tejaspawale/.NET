@@ -43,22 +43,26 @@ public class AccountsRouter
                     }
                     break;
                 case 2:
-                    {
-                        int accno = ui.EnterAccountNumber();
-                        double amount = ui.EnterAmount();
-                        bool status = accountDepartment.Withdraw(accno, amount);
-                        double balance = accountDepartment.GetBalance(accno);
-                        if (status)
-                        {
-                            ui.DisplayMessage("withdraw amount succesfully");
-                        }
-                        else
-                        {
-                            ui.DisplayMessage("does not withdraw amount first check your balance");
-                        }
+{
+    int accno = ui.EnterAccountNumber();
+    double amount = ui.EnterAmount();
 
-                        break;
-                    }
+    bool status = accountDepartment.Withdraw(accno, amount);
+
+    if (status)
+    {
+        ui.DisplayMessage("Withdraw Successful");
+
+        double balance = accountDepartment.GetBalance(accno);
+        ui.DisplayBalance(balance);
+    }
+    else
+    {
+        ui.DisplayMessage("Insufficient Balance or Account Not Found");
+    }
+
+    break;
+}
                 case 3:
                     {
                         int accno = ui.EnterAccountNumber();
@@ -68,6 +72,7 @@ public class AccountsRouter
                         if (status)
                         {
                             ui.DisplayMessage("deposite amount successfully");
+                            ui.DisplayBalance(balance);
                         }
                         else
                         {

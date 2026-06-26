@@ -89,20 +89,36 @@ namespace AccountsManager.UImanager;
             Console.WriteLine("Created On: "+account.CreatedOn);
         }
 
-        public void DisplayOperation(Operations operation)
-        {
-            Console.WriteLine("|     "+operation.Status+"     |    "+operation.StatusMessage+"      |      "+operation.amount+"     |     "+operation.Transactiontime );
-            Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
+        // public void DisplayOperation(Operations operation)
+        // {
+        //     Console.WriteLine("|     "+operation.Status+"     |    "+operation.StatusMessage+"      |      "+operation.amount+"     |     "+operation.Transactiontime );
+        //     Console.WriteLine("-----------------------------------------------------------------------------------------------------------");
 
-        }
+        // }
+
+        public void DisplayOperation(Operations operation)
+{
+    Console.WriteLine(
+        $"| {operation.Status,-6} | {operation.StatusMessage,-25} | {operation.amount,-10} | {operation.Transactiontime}"
+    );
+
+    Console.WriteLine("----------------------------------------------------------------------------------------------");
+}
+
+        // public void DisplayHeading()
+        // {
+        //     Console.WriteLine("------------------------------------------------------------------------------------------------------------");
+        //     Console.WriteLine("| Operation Type. |           Status              |     Amount     |  Date         |     CurrentBalance      ");
+        //     Console.WriteLine("-------------------------------------------------------------------------------------------------------------");
+
+        // }
 
         public void DisplayHeading()
-        {
-            Console.WriteLine("------------------------------------------------------------------------------------------------------------");
-            Console.WriteLine("| Operation Type. |           Status              |     Amount     |  Date         |     CurrentBalance      ");
-            Console.WriteLine("-------------------------------------------------------------------------------------------------------------");
-
-        }
+{
+    Console.WriteLine("----------------------------------------------------------------------------------------------");
+    Console.WriteLine("| Status | Status Message            | Amount    | Date");
+    Console.WriteLine("----------------------------------------------------------------------------------------------");
+}
     }
 
 

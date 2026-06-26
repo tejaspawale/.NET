@@ -39,38 +39,85 @@ public class AccountDepartment : IFundTransferOperation, IDepositOperation, IWit
     return 0;
 }
 
-    public bool Deposit(double AccountNo, double amount)
-    {   
-        bool status = false;
-        AccountRepository accountRepository = new AccountRepository();
+    public bool Deposit(double accountNo, double amount)
+{
+    AccountRepository accountRepository = new AccountRepository();
+    OperationsRepository operationsRepository = new OperationsRepository();
 
-        List<Account> accounts = accountRepository.GetAllAccounts();
-        Account account = accounts.FirstOrDefault(a => a.AccountNo == AccountNo);
+    List<Account> accounts = accountRepository.GetAllAccounts();
+    List<Operations> operations = operationsRepository.GetAllOperations();
 
-            if (account.AccountNo == AccountNo)
-            {
-                account.balance += amount;
-                account.lastTransaction = DateTime.Now;
-                CheckBalance(account);
-                accountRepository.SaveAllAccounts(accounts);
-            }
-        return status;
-    }
-    public bool Withdraw(double AccountNo, double amount)
-    {   bool status = false;
-        AccountRepository accountRepository = new AccountRepository();
-        List<Account> accounts = accountRepository.GetAllAccounts();
-        Account account = accounts.FirstOrDefault(a => a.AccountNo ==AccountNo );
-            if (account.AccountNo == AccountNo)
-            {
-                account.balance -= amount;
-                account.lastTransaction = DateTime.Now;
-                accountRepository.SaveAllAccounts(accounts);
+    Account? account = accounts.FirstOrDefault(a => a.AccountNo == accountNo);
 
-            }
-            return status;
+    if (account == null)
+    {
+        return false;
     }
 
+    account.balance += amount;
+    account.lastTransaction = DateTime.Now;
+
+    accountRepository.SaveAllAccounts(accounts);
+
+    Operations operation = new Operations()
+    {
+        DebitAccNo = 0,
+        creditAccNo = accountNo,
+        amount = amount,
+        Status = "C",
+        StatusMessage = "Deposit",
+        Transactiontime = DateTime.Now
+    };
+
+    operations.Add(operation);
+
+    operationsRepository.SaveAllOperations(operations);
+
+    return true;
+}
+
+
+    public bool Withdraw(double accountNo, double amount)
+{
+    AccountRepository accountRepository = new AccountRepository();
+    OperationsRepository operationsRepository = new OperationsRepository();
+
+    List<Account> accounts = accountRepository.GetAllAccounts();
+    List<Operations> operations = operationsRepository.GetAllOperations();
+
+    Account? account = accounts.FirstOrDefault(a => a.AccountNo == accountNo);
+
+    if (account == null)
+    {
+        return false;
+    }
+
+    if (account.balance < amount)
+    {
+        return false;
+    }
+
+    account.balance -= amount;
+    account.lastTransaction = DateTime.Now;
+
+    accountRepository.SaveAllAccounts(accounts);
+
+    Operations operation = new Operations()
+    {
+        DebitAccNo = accountNo,
+        creditAccNo = 0,
+        amount = amount,
+        Status = "W",
+        StatusMessage = "Withdraw",
+        Transactiontime = DateTime.Now
+    };
+
+    operations.Add(operation);
+
+    operationsRepository.SaveAllOperations(operations);
+
+    return true;
+}
 
 
     public void CheckBalance(Account a)
