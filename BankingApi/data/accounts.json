@@ -1,0 +1,47 @@
+[
+    {
+        "AccHolderName": "Yash Gawade",
+        "AccountNo": 1001,
+        "balance": 20788776922.1408,
+        "lastTransaction": "2026-06-26T15:26:59.2054162+05:30",
+        "InterestRate": 4,
+        "Email": null,
+        "CreatedOn": "0001-01-01T00:00:00"
+    },
+    {
+        "AccHolderName": "Rahul Sharma",
+        "AccountNo": 1002,
+        "balance": 10071724,
+        "lastTransaction": "2026-06-26T15:26:59.2054178+05:30",
+        "InterestRate": 4,
+        "Email": null,
+        "CreatedOn": "0001-01-01T00:00:00"
+    },
+    {
+        "AccHolderName": "Priya Patil",
+        "AccountNo": 1003,
+        "balance": 50000.75,
+        "lastTransaction": "2026-06-19T09:15:00",
+        "InterestRate": 4,
+        "Email": null,
+        "CreatedOn": "0001-01-01T00:00:00"
+    },
+    {
+        "AccHolderName": "Amit Deshmukh",
+        "AccountNo": 1004,
+        "balance": 12000.25,
+        "lastTransaction": "2026-06-16T18:20:00",
+        "InterestRate": 4,
+        "Email": null,
+        "CreatedOn": "0001-01-01T00:00:00"
+    },
+    {
+        "AccHolderName": "Sneha Kulkarni",
+        "AccountNo": 1005,
+        "balance": 3240,
+        "lastTransaction": "2026-06-26T16:10:01.8207416+05:30",
+        "InterestRate": 4,
+        "Email": null,
+        "CreatedOn": "0001-01-01T00:00:00"
+    }
+]

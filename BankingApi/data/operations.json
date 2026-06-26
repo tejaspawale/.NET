@@ -1,0 +1,66 @@
+[
+    {
+        "DebitAccNo": 1002,
+        "creditAccNo": 1001,
+        "amount": 5000,
+        "Status": null,
+        "StatusMessage": null,
+        "Transactiontime": "2026-06-20T12:36:15.4509251+05:30"
+    },
+    {
+        "DebitAccNo": 1001,
+        "creditAccNo": 1002,
+        "amount": 200,
+        "Status": null,
+        "StatusMessage": null,
+        "Transactiontime": "2026-06-20T13:34:08.766108+05:30"
+    },
+    {
+        "DebitAccNo": 1001,
+        "creditAccNo": 1002,
+        "amount": 5000,
+        "Status": null,
+        "StatusMessage": null,
+        "Transactiontime": "2026-06-20T13:35:54.9724954+05:30"
+    },
+    {
+        "DebitAccNo": 1002,
+        "creditAccNo": 1001,
+        "amount": 500,
+        "Status": null,
+        "StatusMessage": null,
+        "Transactiontime": "2026-06-23T12:14:35.9049532+05:30"
+    },
+    {
+        "DebitAccNo": 1001,
+        "creditAccNo": 1002,
+        "amount": 4000,
+        "Status": null,
+        "StatusMessage": null,
+        "Transactiontime": "2026-06-24T18:04:48.0698012+05:30"
+    },
+    {
+        "DebitAccNo": 1001,
+        "creditAccNo": 1002,
+        "amount": 10000000,
+        "Status": "D",
+        "StatusMessage": "Fund Transfer To 1002",
+        "Transactiontime": "2026-06-26T15:26:59.2091743+05:30"
+    },
+    {
+        "DebitAccNo": 1005,
+        "creditAccNo": 0,
+        "amount": 5000,
+        "Status": "W",
+        "StatusMessage": "Withdraw",
+        "Transactiontime": "2026-06-26T16:07:14.585649+05:30"
+    },
+    {
+        "DebitAccNo": 0,
+        "creditAccNo": 1005,
+        "amount": 120,
+        "Status": "C",
+        "StatusMessage": "Deposit",
+        "Transactiontime": "2026-06-26T16:10:01.7884934+05:30"
+    }
+]

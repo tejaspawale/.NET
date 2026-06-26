@@ -1,0 +1,23 @@
+namespace AccountsManager.Listners;
+
+public class AccountsDepartment : AccountListener {
+    public void onUnderBalance(double balance) {
+      Console.WriteLine(" Department! Current Balance: " + balance);
+    }
+
+    
+    public void onOverBalance(double balance) {
+        Console.WriteLine("Department! Current Balance: " + balance);
+    }
+
+    public void onCredit(double balance) {
+      Console.WriteLine(" Department! Current Balance: " + balance);
+    }
+
+    
+    public void onDebit(double balance) {
+        Console.WriteLine("Department! Current Balance: " + balance);
+    }
+
+
+}
