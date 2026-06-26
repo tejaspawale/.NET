@@ -6,74 +6,71 @@ using AccountsManager.repository;
 
 namespace AccountsManager.publisher;
 
-public class AccountDepartment : IFundTransferOperation,IDepositOperation,IWithdrawOperation,IMiniStatementOperations,ICalculateInterestOperation
+public class AccountDepartment : IFundTransferOperation, IDepositOperation, IWithdrawOperation, IMiniStatementOperations, ICalculateInterestOperation
 {
-    List<Account> accounts { get; set; }
+   // List<Account> accounts { get; set; }
     NotificationService service;
 
-    public AccountDepartment(List<Account> accounts, NotificationService notificationService)
-    {
-        this.service = notificationService;
-        this.accounts = accounts;
-    }
-    AccountRepository accountRepository = new AccountRepository();
-    OperationsRepository operationsRepository = new OperationsRepository();
+    
     public List<AccountListener> listeners = new List<AccountListener>();
 
-
-    public double GetBalance(int AccountNo)
+    public AccountDepartment(NotificationService notificationService)
     {
-        foreach (Account account in accounts)
-        {
+        this.service = notificationService;
+    }
+
+
+    public double GetBalance(int accountNo)
+{
+    AccountRepository accountRepository = new AccountRepository();
+    List<Account> accounts = accountRepository.GetAllAccounts();
+
+    Account account = accounts.FirstOrDefault(a => a.AccountNo == accountNo);
+
+    if (account != null)
+    {
+        account.lastTransaction = DateTime.Now;
+
+        accountRepository.SaveAllAccounts(accounts);
+
+        return account.balance;
+    }
+
+    return 0;
+}
+
+    public bool Deposit(double AccountNo, double amount)
+    {   
+        bool status = false;
+        AccountRepository accountRepository = new AccountRepository();
+
+        List<Account> accounts = accountRepository.GetAllAccounts();
+        Account account = accounts.FirstOrDefault(a => a.AccountNo == AccountNo);
+
             if (account.AccountNo == AccountNo)
             {
+                account.balance += amount;
                 account.lastTransaction = DateTime.Now;
-                Console.WriteLine($"Balance in account with id {account.AccHolderName}is {account.balance}");
+                CheckBalance(account);
+                accountRepository.SaveAllAccounts(accounts);
+            }
+        return status;
+    }
+    public bool Withdraw(double AccountNo, double amount)
+    {   bool status = false;
+        AccountRepository accountRepository = new AccountRepository();
+        List<Account> accounts = accountRepository.GetAllAccounts();
+        Account account = accounts.FirstOrDefault(a => a.AccountNo ==AccountNo );
+            if (account.AccountNo == AccountNo)
+            {
+                account.balance -= amount;
+                account.lastTransaction = DateTime.Now;
                 accountRepository.SaveAllAccounts(accounts);
 
-                return account.balance;
             }
-
-        }
-        return 0;
+            return status;
     }
 
-    public void Deposit(double AccountNo, double amount)
-{
-    foreach (Account account in accounts)
-    {
-        if (account.AccountNo == AccountNo)
-        {
-            account.balance += amount;
-            account.lastTransaction = DateTime.Now;
-
-            Console.WriteLine($"Balance in account with id {account.AccountNo} after deposit is {account.balance}");
-
-            CheckBalance(account);
-
-            accountRepository.SaveAllAccounts(accounts);
-
-            break;
-        }
-    }
-}
-    public void Withdraw(double AccountNo, double amount)
-{
-    foreach (Account account in accounts)
-    {
-        if (account.AccountNo == AccountNo)
-        {
-            account.balance -= amount;
-            account.lastTransaction = DateTime.Now;
-
-            Console.WriteLine( $"Balance in account with id {account.AccountNo} after withdraw is {account.balance}");
-
-            accountRepository.SaveAllAccounts(accounts);
-
-            break;
-        }
-    }
-}
 
 
     public void CheckBalance(Account a)
@@ -99,106 +96,121 @@ public class AccountDepartment : IFundTransferOperation,IDepositOperation,IWithd
 
 
 
-
-public void FundTransfer(double fromAccount,double toAccount,double amount)
+public bool FundTransfer(double fromAccount, double toAccount, double amount)
 {
-    Account? sender = null;
-    Account? receiver = null;
+    AccountRepository accountRepository = new AccountRepository();
+    OperationsRepository operationsRepository = new OperationsRepository();
 
-    foreach (Account a in accounts)
-    {
-        if (a.AccountNo == fromAccount)
-        sender = a;
+    List<Account> accounts = accountRepository.GetAllAccounts();
 
-        if (a.AccountNo == toAccount)
-            receiver = a;
-    }
+    Account? sender = accounts.FirstOrDefault(a => a.AccountNo == fromAccount);
+    Account? receiver = accounts.FirstOrDefault(a => a.AccountNo == toAccount);
 
     if (sender == null || receiver == null)
     {
-        Console.WriteLine("Account Not Found");
-        return;
+        return false;
     }
 
     if (sender.balance < amount)
     {
-        Console.WriteLine("Insufficient Balance");
-        return;
+        return false;
     }
 
-    Withdraw(fromAccount, amount);
+    sender.balance -= amount;
+    sender.lastTransaction = DateTime.Now;
 
-    Deposit(toAccount, amount);
+    receiver.balance += amount;
+    receiver.lastTransaction = DateTime.Now;
+
+    accountRepository.SaveAllAccounts(accounts);
+
+    List<Operations> operations = operationsRepository.GetAllOperations();
 
     Operations operation = new Operations()
     {
         DebitAccNo = fromAccount,
         creditAccNo = toAccount,
         amount = amount,
-        Transactiontime = DateTime.Now
+        Transactiontime = DateTime.Now,
+        Status = "D",
+        StatusMessage = $"Fund Transfer To {toAccount}"
     };
-
-    List<Operations> operations = operationsRepository.GetAllOperations();
 
     operations.Add(operation);
 
     operationsRepository.SaveAllOperations(operations);
 
-    Console.WriteLine("Transfer Successful");
+    return true;
 }
+    public int CompareTransactions(Operations op1, Operations op2)
+    {
+        int CompareTras = op2.Transactiontime.CompareTo(op1.Transactiontime);
+        return CompareTras;
+    }
 
-public int CompareTransactions(Operations op1,Operations op2)
-{     int CompareTras =op2.Transactiontime.CompareTo(op1.Transactiontime);
-    return CompareTras;
-}
-
-public  List<Operations> GetMiniStatement(int accountNumber)
+    public List<Operations> GetMiniStatement(int accountNumber)
 {
-    List<Operations> statements = new List<Operations>();
+    OperationsRepository operationsRepository = new OperationsRepository();
+
     List<Operations> operations = operationsRepository.GetAllOperations();
 
-    foreach (Operations Operation in operations)
-    {
-        if (Operation.DebitAccNo == accountNumber ||
-            Operation.creditAccNo == accountNumber)
-        {
-            statements.Add(Operation);
-        }
-    }
-    statements.Sort(CompareTransactions);
-
-    if (statements.Count > 5)
-    {
-        statements = statements.GetRange(0, 5);
-    }
-
-    return statements;
+    return operations
+        .Where(op => op.DebitAccNo == accountNumber || 
+        op.creditAccNo == accountNumber)
+        .OrderByDescending(op => op.Transactiontime)
+        .Take(5)
+        .ToList();
 }
 
 
-public void CalculateInterest(double accountNo)
+    public double CalculateInterest(double accountNo)
 {
-    foreach(Account a in accounts)
+    AccountRepository accountRepository = new AccountRepository();
+
+    List<Account> accounts = accountRepository.GetAllAccounts();
+
+    Account? account = accounts.FirstOrDefault(a => a.AccountNo == accountNo);
+
+    if (account != null)
     {
-        if(a.AccountNo == accountNo)
-        {
-            double interest = a.balance * a.InterestRate / 100;
+        double interest = account.balance * account.InterestRate / 100;
 
-            a.balance += interest; 
+        account.balance += interest;
+        account.lastTransaction = DateTime.Now;
 
-            a.lastTransaction = DateTime.Now;
+        accountRepository.SaveAllAccounts(accounts);
 
-            Console.WriteLine($"Interest Credited : {interest}");
-            Console.WriteLine($"Current Balance : {a.balance}");
-
-            accountRepository.SaveAllAccounts(accounts);
-            return;
-        }
+        return interest;
     }
 
-    Console.WriteLine("Account Not Found");
+    return 0;
 }
-    
+
+public bool CreateAccount(Account account)
+        {
+            bool status=false;
+            AccountRepository accountRepository = new AccountRepository();
+            List<Account> accounts = accountRepository.GetAllAccounts();
+            accounts.Add(account);
+            accountRepository.SaveAllAccounts(accounts);
+            status =true;
+            return status;
+        }
+
+
+    public Account GetAccount(int accountId)
+        {   
+            AccountRepository accountRepository = new AccountRepository();
+            List<Account> accounts = accountRepository.GetAllAccounts();
+            Account account = accounts.FirstOrDefault(a => a.AccountNo == accountId);
+            if (account != null)
+            {
+                return account;
+            }
+
+            return null;
+        }
+
 
     public void AddListener(AccountListener listener)
     {

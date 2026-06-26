@@ -1,5 +1,5 @@
 namespace AccountsManager.publisher.operations;
 
 public interface ICalculateInterestOperation{
-        void CalculateInterest(double accountNo);
+        double CalculateInterest(double accountNo);
 }

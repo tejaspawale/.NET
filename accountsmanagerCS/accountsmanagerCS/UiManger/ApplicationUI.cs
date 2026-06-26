@@ -101,6 +101,7 @@ public class UiManager
         int accNo = Convert.ToInt32(Console.ReadLine());
         
         accountDepartment.GetBalance(accNo);
+        
     }
 
     public void InterestRate()
@@ -135,4 +136,6 @@ public class UiManager
         Console.WriteLine("-------------------");
     }
 }
+
+
 }
