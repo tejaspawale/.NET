@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\bin\Debug\net10.0\ArraysProject.exe
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\bin\Debug\net10.0\ArraysProject.deps.json
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\bin\Debug\net10.0\ArraysProject.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\bin\Debug\net10.0\ArraysProject.dll
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\bin\Debug\net10.0\ArraysProject.pdb
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.sourcelink.json
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.dll
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\refint\ArraysProject.dll
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.pdb
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ArraysProject.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Dsa\ArraysProject\obj\Debug\net10.0\ref\ArraysProject.dll
