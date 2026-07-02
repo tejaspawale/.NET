@@ -1,7 +1,8 @@
 ﻿int[,] numbers =
 {
     {1,2,3},
-    {4,5,6}
+    {4,5,6},
+    {7,8,9}
 };
 
 
@@ -27,4 +28,24 @@ for(int i = 0; i<=1 ; i++)
     }
     Console.WriteLine();
 
+}
+
+
+int[,]result = new int  [3,3];
+for(int i = 0; i < numbers.GetLength(0); i++)
+{
+    for(int j = 0; j < numbers.GetLength(1); j++)
+    {
+        result[j,i] = numbers[i,j];
+    }
+}
+
+for (int i = 0; i < result.GetLength(0); i++)
+{
+    for (int j = 0; j < result.GetLength(1); j++)
+    {
+        Console.Write(result[i, j] + " ");
+    }
+
+    Console.WriteLine();
 }
