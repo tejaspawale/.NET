@@ -26,13 +26,51 @@ public class DoublyLinklist
     {
 
         Node newNode = new Node(data);
-
         current = head;
         while(current.next!= null)
         {
             current = current.next;
         }
         current.next = newNode;
+    }
+
+    public void update(int oldData,int newData)
+    {
+         Node current = head;
+
+        while (current != null)
+        {   if(current.data == oldData)
+            {
+                current.data = newData;
+                break;
+            }
+
+            current = current.next;
+        }
+    }
+
+    public void insertAnyWhere(int data)
+    {
+        Node newNode = new Node(data);
+        current = head;
+                             
+        while(current.next != null && current.next.data < data)
+        {
+            current = current.next;
+        } 
+        if(current.next == null)
+        {
+            InsertAtEnd(data);
+        } else
+        {
+        newNode.next = current.next;
+        current.next = newNode;
+        newNode.prev = current;
+        current.next.prev = newNode;
+        }
+        
+       
+
     }
 
     public void Display()
