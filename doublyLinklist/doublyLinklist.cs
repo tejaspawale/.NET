@@ -32,6 +32,7 @@ public class DoublyLinklist
             current = current.next;
         }
         current.next = newNode;
+        newNode.prev = current;
     }
 
     public void update(int oldData, int newData)
@@ -80,7 +81,52 @@ public class DoublyLinklist
         }
 
 
+    }
 
+
+    public void delete(int data)
+
+    {
+        if (head == null)
+        {
+            return;
+        }
+
+        if (head.data == data)
+        {
+            if (head.next == null)
+            {
+                head = null;
+            }
+            else
+            {
+                head = head.next;
+                head.prev = null;
+            }
+            return;
+        }
+
+        Node current = head;
+
+        while (current != null)
+        {
+            if (current.data == data)
+            {
+                if (current.next == null)
+                {
+                    current.prev.next = null;
+                }
+                else
+                {
+                    current.prev.next = current.next;
+                    current.next.prev = current.prev;
+                }
+                return;
+            }
+            current = current.next;
+
+
+        }
     }
 
     public void Display()
