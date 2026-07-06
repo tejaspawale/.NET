@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\doublyLinklist\bin\Debug\net10.0\doublyLinklist.exe
+C:\TAP\MygitRepo\.NET\doublyLinklist\bin\Debug\net10.0\doublyLinklist.deps.json
+C:\TAP\MygitRepo\.NET\doublyLinklist\bin\Debug\net10.0\doublyLinklist.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\doublyLinklist\bin\Debug\net10.0\doublyLinklist.dll
+C:\TAP\MygitRepo\.NET\doublyLinklist\bin\Debug\net10.0\doublyLinklist.pdb
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.sourcelink.json
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.dll
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\refint\doublyLinklist.dll
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.pdb
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\doublyLinklist.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\doublyLinklist\obj\Debug\net10.0\ref\doublyLinklist.dll
