@@ -9,11 +9,12 @@ dll.InsertAtFront(10);
 dll.InsertAtEnd(15);
 dll.update(5,10);
 dll.update(10,5);
-// dll.insertAnyWhere(5);
-// dll.insertAnyWhere(10);
-// dll.insertAnyWhere(15);
-// dll.insertAnyWhere(0);
-dll.delete(15);
-dll.Display();
+dll.insertAnyWhere(28);
+dll.insertAnyWhere(30);
+dll.insertAnyWhere(2);
+dll.insertAnyWhere(0);
+//dll.delete(15);
+dll.DisplayTail();
+dll.DisplayStart();
 }
 }

@@ -4,6 +4,10 @@ public class DoublyLinklist
 {
     Node head = null;
     Node current = null;
+
+    Node last=null;
+
+
     public void InsertAtFront(int data)
     {
         Node newNode = new Node(data);
@@ -11,6 +15,7 @@ public class DoublyLinklist
         if (head == null)
         {
             head = newNode;
+            last = newNode;
 
         }
         else
@@ -26,6 +31,13 @@ public class DoublyLinklist
     {
 
         Node newNode = new Node(data);
+        if(head == null)
+        {
+            head = newNode;
+            last = newNode;
+            return;
+        }
+
         current = head;
         while (current.next != null)
         {
@@ -33,6 +45,7 @@ public class DoublyLinklist
         }
         current.next = newNode;
         newNode.prev = current;
+        last = newNode;
     }
 
     public void update(int oldData, int newData)
@@ -55,7 +68,11 @@ public class DoublyLinklist
     {
         Node newNode = new Node(data);
         current = head;
-
+        if(head == null)
+        {
+            head = newNode;
+            last = newNode;
+        }
 
         while (current.next != null && current.next.data < data)
         {
@@ -97,6 +114,7 @@ public class DoublyLinklist
             if (head.next == null)
             {
                 head = null;
+                last = null;
             }
             else
             {
@@ -115,6 +133,7 @@ public class DoublyLinklist
                 if (current.next == null)
                 {
                     current.prev.next = null;
+                    last = current.prev;
                 }
                 else
                 {
@@ -129,23 +148,27 @@ public class DoublyLinklist
         }
     }
 
-    public void Display()
+    public void DisplayStart()
     {
         Node current = head;
 
         while (current != null)
         {
-            Console.Write(current.data + " ");
+            Console.Write(current.data + "-->");
             current = current.next;
         }
 
-        Console.WriteLine();
+       Console.Write("null");
     }
 
-
-
-
-
-
-
+    public void DisplayTail()
+    {
+        current = last;
+        while(current!= null)
+        {
+            Console.Write(current.data + "-->");
+            current = current.prev;
+        }
+        Console.Write("null");
+    }
 }
