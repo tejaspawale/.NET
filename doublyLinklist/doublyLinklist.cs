@@ -96,8 +96,7 @@ public class DoublyLinklist
             newNode.prev = current;
             current.next.prev = newNode;
         }
-
-
+        
     }
 
 
@@ -143,8 +142,6 @@ public class DoublyLinklist
                 return;
             }
             current = current.next;
-
-
         }
     }
 
@@ -158,7 +155,7 @@ public class DoublyLinklist
             current = current.next;
         }
 
-       Console.Write("null");
+       Console.WriteLine("null");
     }
 
     public void DisplayTail()
@@ -169,6 +166,6 @@ public class DoublyLinklist
             Console.Write(current.data + "-->");
             current = current.prev;
         }
-        Console.Write("null");
+        Console.WriteLine("null");
     }
 }

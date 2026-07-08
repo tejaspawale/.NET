@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\bin\Debug\net10.0\CircularLinkList.exe
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\bin\Debug\net10.0\CircularLinkList.deps.json
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\bin\Debug\net10.0\CircularLinkList.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\bin\Debug\net10.0\CircularLinkList.dll
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\bin\Debug\net10.0\CircularLinkList.pdb
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.sourcelink.json
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.dll
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\refint\CircularLinkList.dll
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.pdb
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\CircularLinkList.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\CircularLinklist\CircularLinkList\obj\Debug\net10.0\ref\CircularLinkList.dll
