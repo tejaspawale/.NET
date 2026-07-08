@@ -15,7 +15,10 @@ public class Program
         cll.Display();
         cll.Update(15,40);
         cll.Display();
+        cll.Delete(10);
+        cll.Display();
         
+;
 
 
     }

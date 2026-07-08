@@ -70,4 +70,60 @@ public class CircularLinklist
 
         Console.WriteLine("Data not Found");
     }
+
+    public void Delete(int data)
+{
+    
+    if (head == null)
+    {
+        Console.WriteLine("List is Empty");
+        return;
+    }
+
+    
+    if (head.next == head)
+    {
+        if (head.data == data)
+        {
+            head = null;
+        }
+        else
+        {
+            Console.WriteLine("Value not found");
+        }
+        return;
+    }
+
+   
+    if (head.data == data)
+    {
+        Node last = head;
+
+        while (last.next != head)
+        {
+            last = last.next;
+        }
+
+        last.next = head.next;
+        head = head.next;
+        return;
+    }
+
+   
+    Node current = head;
+
+    while (current.next != head && current.next.data != data)
+    {
+        current = current.next;
+    }
+
+    if (current.next == head)
+    {
+        Console.WriteLine("Value not found");
+        return;
+    }
+
+    current.next = current.next.next;
+}
+
 }
