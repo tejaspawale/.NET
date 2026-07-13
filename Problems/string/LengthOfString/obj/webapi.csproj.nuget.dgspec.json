@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\webapi\\webapi.csproj": {}
+    "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\LengthOfString\\webapi.csproj": {}
   },
   "projects": {
-    "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\webapi\\webapi.csproj": {
+    "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\LengthOfString\\webapi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\webapi\\webapi.csproj",
+        "projectUniqueName": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\LengthOfString\\webapi.csproj",
         "projectName": "webapi",
-        "projectPath": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\webapi\\webapi.csproj",
+        "projectPath": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\LengthOfString\\webapi.csproj",
         "packagesPath": "C:\\Users\\Shubham\\.nuget\\packages\\",
-        "outputPath": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\webapi\\obj\\",
+        "outputPath": "C:\\TAP\\MygitRepo\\.NET\\Problems\\string\\LengthOfString\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

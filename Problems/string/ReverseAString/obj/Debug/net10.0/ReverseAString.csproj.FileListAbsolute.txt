@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\bin\Debug\net10.0\ReverseAString.exe
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\bin\Debug\net10.0\ReverseAString.deps.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\bin\Debug\net10.0\ReverseAString.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\bin\Debug\net10.0\ReverseAString.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\bin\Debug\net10.0\ReverseAString.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.sourcelink.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\refint\ReverseAString.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ReverseAString.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseAString\obj\Debug\net10.0\ref\ReverseAString.dll
