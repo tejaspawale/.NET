@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\bin\Debug\net10.0\ReverseEachWordSentence.exe
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\bin\Debug\net10.0\ReverseEachWordSentence.deps.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\bin\Debug\net10.0\ReverseEachWordSentence.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\bin\Debug\net10.0\ReverseEachWordSentence.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\bin\Debug\net10.0\ReverseEachWordSentence.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.sourcelink.json
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\refint\ReverseEachWordSentence.dll
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ReverseEachWordSentence.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Problems\string\ReverseEachWordSentence\obj\Debug\net10.0\ref\ReverseEachWordSentence.dll
