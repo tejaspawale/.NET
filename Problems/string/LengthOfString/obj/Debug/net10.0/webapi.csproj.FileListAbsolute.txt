@@ -1,0 +1,15 @@
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\bin\Debug\net10.0\webapi.exe
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\bin\Debug\net10.0\webapi.deps.json
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\bin\Debug\net10.0\webapi.runtimeconfig.json
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\bin\Debug\net10.0\webapi.dll
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\bin\Debug\net10.0\webapi.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.GeneratedMSBuildEditorConfig.editorconfig
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.AssemblyInfoInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.AssemblyInfo.cs
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.csproj.CoreCompileInputs.cache
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.sourcelink.json
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.dll
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\refint\webapi.dll
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.pdb
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\webapi.genruntimeconfig.cache
+C:\TAP\MygitRepo\.NET\Problems\string\webapi\obj\Debug\net10.0\ref\webapi.dll
